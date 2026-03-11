@@ -91,8 +91,8 @@ Sequential account manipulation events (password reset → disable → delete) w
 Built a detection dashboard with 4 panels — one per attack scenario.
 
 ### Panel 1 — Brute Force
-[Brute Force Panel](<img width="1827" height="627" alt="panel1_bruteforce" src="https://github.com/user-attachments/assets/2b5f6956-4f9e-4f08-9f13-b4b57d125ff3" />
-)
+<img width="1827" height="627" alt="panel1_bruteforce" src="https://github.com/user-attachments/assets/5f352013-1b5a-47c7-b1fd-e09a3d662abd" />
+
 
 ### Panel 2 — Encoded PowerShell
 ![PowerShell Panel](screenshots/panel2_powershell.png)
