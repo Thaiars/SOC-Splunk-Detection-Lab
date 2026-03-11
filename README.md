@@ -95,13 +95,16 @@ Built a detection dashboard with 4 panels — one per attack scenario.
 
 
 ### Panel 2 — Encoded PowerShell
-![PowerShell Panel](screenshots/panel2_powershell.png)
+<img width="1827" height="227" alt="panel2_powershell" src="https://github.com/user-attachments/assets/8be686e6-0807-4fce-b6fd-ddc551c745f8" />
+
 
 ### Panel 3 — Persistence Activity
-![Persistence Panel](screenshots/panel3_persistence.png)
+<img width="1817" height="428" alt="panel3_persistence" src="https://github.com/user-attachments/assets/a352f227-790e-4a6d-a24d-389da2bdccf6" />
+
 
 ### Panel 4 — Account Manipulation
-![Account Removal Panel](screenshots/panel4_account_removal.png)
+<img width="1837" height="538" alt="panel4_account_removal" src="https://github.com/user-attachments/assets/6882683e-123f-48d6-a378-2af45266b427" />
+
 
 ---
 
