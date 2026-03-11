@@ -42,8 +42,7 @@ index=main source="WinEventLog:Security" EventCode=4625
 | where count >= 5
 | sort -count
 ```
-
- Groups failed logins by account and source IP — a count of 5+ in a short window is consistent with automated brute-force tooling.
+Groups failed logins by account and source IP — a count of 5+ in a short window is consistent with automated brute-force tooling.
 
 ---
 
@@ -108,7 +107,7 @@ Built a detection dashboard with 4 panels — one per attack scenario.
 
 ---
 
-## 🗂 Repository Structure
+## Repository Structure
 
 ```
 splunk-soc-detection-lab/
