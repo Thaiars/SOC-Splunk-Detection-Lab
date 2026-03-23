@@ -1,0 +1,22 @@
+title: account manipulation
+id: fb82ad25-8a7e-4266-931e-50501ae99ff0
+status: experimental
+description: 
+logsource:
+    product: windows
+    service: security
+detection:
+    selection:
+        EventID:            
+            - 4723
+            - 4724
+            - 4725
+            - 4726
+    condition: selection
+falsepositives:
+    - Legitimate admin offboarding a user account
+level: critical
+tags:
+    - attack.impact
+    - attack.t1531
+    - attack.1098

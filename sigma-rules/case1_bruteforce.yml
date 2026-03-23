@@ -1,0 +1,35 @@
+# title : Bruce Force Attempt Login
+# id: 06d73ed8-6b8a-43d1-9425-9d32105e5360
+# status: experimental
+# description: Detects multiple failed login attempts indicating bruce force
+# logsource:
+# 	product: windows 		
+# 	service: security
+# detection: 
+# 	selection: 
+# 	     EventID: 4625 
+# 	condition: selection | count() > 5
+# falsepositives:
+# 	- Legitimate user forgetting password
+# level: high
+# tags:
+# 	- attack.credential_access
+#   - attack.t1110
+
+title: Brute Force Login Attempt
+id: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+status: experimental
+description: Detects multiple failed login attempts indicating brute force
+logsource:
+    product: windows
+    service: security
+detection:
+    selection:
+        EventID: 4625
+    condition: selection 
+falsepositives:
+    - Legitimate user forgetting password
+level: high
+tags:
+    - attack.credential_access
+    - attack.t1110

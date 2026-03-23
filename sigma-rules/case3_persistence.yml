@@ -1,0 +1,22 @@
+title: Post-Exploitation 
+id: a9910026-9b68-4979-a4c3-216563af79b4
+status: experimental
+description: Detects post-exploitation activity such as account creation and scheduled tasks.
+logsource:
+    product: windows
+    service: security
+detection:
+    selection:
+        EventID:
+            - 4720
+            - 4732
+            - 4698   
+    condition: selection
+falsepositives:
+     - unsual admin behaviour creating accounts and tasks in a short period 
+level: critical
+tags:
+    - attack.persistence
+    - attack.privilege-escalation
+    - attack.t1136.001
+    - attack.t1053.005

@@ -1,0 +1,20 @@
+title: Suspicious PowerShell Encoded Command
+id: 7e5cec0f-5170-44e3-928b-0068c483d633
+status: experimental
+description: Detects PowerShell execution with Base64 encoded command
+logsource:
+    product: windows
+    service: security
+detection:
+    selection:
+        EventID: 4688
+        CommandLine|contains: '-EncodedCommand'
+    condition: selection
+falsepositives:
+    - Legitimate admin automation scripts using encoded commands
+level: critical
+tags:
+    - attack.execution
+    - attack.defense_evasion
+    - attack.t1059.001
+    - attack.t1027
